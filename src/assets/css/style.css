@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  html {
+    line-height: initial;
+  }
+  body {
+    background: url(../scribble_light.png);
+    -webkit-font-smoothing: antialiased;
+    font-family: "-apple-system", BlinkMacSystemFont, Roboto, "Helvetica Neue",
+      "MIcrosoft YaHei", sans-serif !important;
+    margin: 0 auto !important;
+    position: relative;
+    min-width: 300px;
+    -moz-box-sizing: border-box; /*Firefox3.5+*/
+    -webkit-box-sizing: border-box; /*Safari3.2+*/
+    -o-box-sizing: border-box; /*Opera9.6*/
+    -ms-box-sizing: border-box; /*IE8*/
+    /*overflow: hidden;*/
+    box-sizing: border-box; /*W3C标准(IE9+，Safari5.1+,Chrome10.0+,Opera10.6+都符合box-sizing的w3c标准语法)*/
+    font-size: 14px;
+    -webkit-overflow-scrolling: touch; /* 用于 ios5+ */
+    /*禁止微信用户修改字体大小*/
+    -webkit-text-size-adjust: 100% !important;
+    text-size-adjust: 100% !important;
+    -moz-text-size-adjust: 100% !important;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #52514f;
+  }
+  
+  a:link {
+    color: #52514f;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: #666666;
+    text-decoration: none;
+  }
+  
+  a:visited:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: none;
+    color: #52514f;
+  }
+  
+  a:active {
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  a img {
+    border: none;
+  }
+  
+  li {
+    list-style: none;
+  }
+  input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+    color: #555;
+    -webkit-appearance: none;
+  }
+  
+  input:focus {
+    border-color: #4fc3f7;
+    outline: none;
+    -webkit-appearance: none;
+  }
+  textarea:focus {
+    border-color: #4fc3f7;
+    outline: none;
+  }
+  .clear {
+    clear: both;
+  }
+  .clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    zoom: 1;
+  }
