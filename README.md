@@ -4,17 +4,39 @@
 
 今日份外努力，明日格外妖娆
 
-## 构造
+## 使用方法
+
+### 安装依赖
 
 ```bash
-# install dependencies
-cnpm install
-
-# serve with hot reload at localhost:8080
-cnpm run dev
-
-# build for production with minification
-cnpm run build
+cnpm i km-vue-utils
 ```
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+- 方式一：全局引用
+
+在 main.js 文件 或者想要引入的文件导入
+
+```js
+import utils from "km-vue-utils";
+Vue.use(utils);
+```
+
+- 方式二：局部使用
+
+在单个.vue 文件中引用全部或者单个组件
+
+```js
+import utils from "km-vue-utils";
+Vue.use(utils.ReturnTop);//示例引用单个组件
+```
+
+## 包含组件
+
+### 返回顶部
+
+```js
+//直接在所需文件引用
+<tool-return-top></tool-return-top>
+```
+
+未完待续...😜
