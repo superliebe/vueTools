@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="test_box">测试滑动顶部</div>
-    <tool-return-top></tool-return-top>
+    <tool-return-top :config="returnConfig"></tool-return-top>
   </div>
 </template>
 
@@ -11,7 +11,10 @@ export default {
   components: {},
   data() {
     return {
-      msg: ""
+      returnConfig:{
+          width:'60px',
+          height:'60px',
+      }
     };
   },
   mounted() {},

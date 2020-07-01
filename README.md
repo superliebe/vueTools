@@ -27,16 +27,25 @@ Vue.use(utils);
 
 ```js
 import utils from "km-vue-utils";
-Vue.use(utils.ReturnTop);//示例引用单个组件
+Vue.use(utils.ReturnTop); //示例引用单个组件
 ```
 
 ## 包含组件
 
 ### 返回顶部
 
-```js
+```html
 //直接在所需文件引用
-<tool-return-top></tool-return-top>
+<tool-return-top :config="config" :imgSrc="imgSrc"></tool-return-top>
 ```
+
+- config 配置
+
+| 名称   | 描述 | 默认值 |
+| ------ | ---- | ------ |
+| width  | 宽度 | '40px' |
+| heigth | 高度 | '40px' |
+
+- imgSrc 返回顶部的图片
 
 未完待续...😜
