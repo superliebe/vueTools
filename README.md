@@ -35,7 +35,7 @@ Vue.use(utils.ReturnTop); //示例引用单个组件
 ### 返回顶部
 
 ```html
-//直接在所需文件引用
+<!-- 直接在所需文件引用 -->
 <tool-return-top :config="config" :imgSrc="imgSrc"></tool-return-top>
 ```
 
@@ -47,5 +47,16 @@ Vue.use(utils.ReturnTop); //示例引用单个组件
 | heigth | 高度 | '40px' |
 
 - imgSrc 返回顶部的图片
+
+### 暂无数据
+
+```html
+<!-- 直接在所需文件引用 -->
+<tool-no-message tips='暂无数据' icon='vue-icon iconzanwushuju'></tool-no-message>
+```
+
+- tips 描述
+
+- icon 采用iconfont字体库，显示字体图标
 
 未完待续...😜

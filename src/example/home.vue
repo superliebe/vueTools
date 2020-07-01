@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h1 class="km-title">vue项目常用组件</h1>
     <ul class="km-ul">
       <li class="km-li" v-for="(item,index) in list" :key="index" @click="toDetail(item)">
         <div class="li-title">{{item.title}}</div>
@@ -23,6 +22,10 @@ export default {
           title:'返回顶部',
           des:'点击实现从页面底部返回到顶部功能',
           path:'/returnTop'
+      },{
+          title:'暂无数据',
+          des:'处理空列表数据的展示',
+          path:'/noMessage'
       }]
     };
   },
@@ -35,12 +38,7 @@ export default {
 };
 </script>
 <style scoped>
-.km-title {
-  text-align: center;
-  padding: 30px 0;
-  font-size: 24px;
-  margin-bottom: 20px;
-}
+
 .km-ul {
   max-width: 1200px;
   margin: 0 auto;

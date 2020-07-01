@@ -1,11 +1,13 @@
 //index.js用于发布时组件的主文件
 // 方式1 -- 封装组件
 import Vue from 'vue';
-import ReturnTop from './plugins/returnTop/index.js';
-import func from './plugins/func/index.js';
+import ReturnTop from './plugins/returnTop/index.js';//返回顶部
+import noMessage from './plugins/noMessage/index.js';//暂无数据
+import func from './plugins/func/index.js';//常用方法合集
 // ...如果还有的话继续添加
 const components = [
   ReturnTop,
+  noMessage,
 ]
 //循环遍历注册组件，就可以向其他ui组件库那样，使用Vue.use()来全局使用
 const install = function (Vue, opts = {}) {
@@ -23,6 +25,7 @@ if (typeof window !== 'undefined' && window.Vue) {
 export default {
     install,
     ReturnTop,
+    noMessage,
     func
 }
 
